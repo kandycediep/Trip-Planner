@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- logo appearing on browser tab -->
+    <link rel="icon" href ="./images/logo.png">
+    <!-- importing fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+    </style>
+  </head>
+  <body>
+    <!-- overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- button to close overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" style="font-family:'Poppins'">Home</a>
+    <a href="sanfrancisco.html" style="font-family:'Poppins'">San Francisco</a>
+    <a href="italy.html" style="font-family:'Poppins'">Italy</a>
+    <a href="singapore.html" style="font-family:'Poppins'">Singapore</a>
+    <a href="australia.html" style="font-family:'Poppins'">Australia</a>
+  </div>
+
+</div>
+
+<!-- open overlay navigation menu -->
+<span class = "heading" style="font-size:50px;font-family:'Poppins';cursor:pointer;" onclick="openNav()">&#9776; Trip Planner <img src="./images/transparent.png" style="height:55px;"></span>
+
+<div id="slider">
+<ul id="slideWrap"> 
+      <li><img src="https://images.unsplash.com/photo-1602086566212-ef4fcb89cff6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80"></li>
+      <li><img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80" alt="Venice, Italy"></li>
+      <li><img src="https://images.unsplash.com/photo-1599576838688-8a6c11263108?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Chiang Mai, Thailand"></li>
+      <li><img src="https://images.unsplash.com/photo-1583844056361-4418a8f2a985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1649&q=80" alt="Positano, Salerno, Italien"></li>
+      <li><img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Cairo, Egypt"></li>
+      <li><img src="https://images.unsplash.com/photo-1577640837437-6da1ca585dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" alt="New York, NY, USA"></li>
+      <li><img src="https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Kauai, Hawaii, USA"></li>
+      <li><img src="https://images.unsplash.com/photo-1524396309943-e03f5249f002?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80" alt="Paris, France"></li>
+      <li><img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Sydney, Australia"></li>
+    </ul>
+    
+    <!-- adding buttons -->
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+
+</div>
+
+<center>
+<p class="wording">Planning a Trip Made Simple</p>
+<p class="subWording">- Suggesting and Informing About Places All Over The World -</p>
+</center>
+
+  <img class="worldMap" src="./images/globalmap.png">
+
+
+<!-- <img src="https://worldmapwithcountries.net/wp-content/uploads/2020/11/Printable-Map-of-World.jpg"> -->
+    <script src="script.js"></script>
+  </body>
+</html>

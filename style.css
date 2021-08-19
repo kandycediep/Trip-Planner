@@ -1,0 +1,142 @@
+body {
+  background-color: #fff0e5;
+}
+
+/* overlay (background) */
+.overlay {
+  /* height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* black w/opacity */
+  overflow-x: hidden; /* disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* display block instead of inline */
+  transition: 0.3s; /* transition effects on hover (color) */
+}
+
+/* when you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* when the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* matching image with 'slider' size */
+#slider {
+  position: relative;
+  width: 1420px;
+  height: 650px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8%;
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+
+#slider ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+#slider ul li img{
+  width: 1420px;
+  height: 650px;
+  object-fit: cover;
+}
+
+/* customizing buttons */
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+/* aligning to each side */
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+.wording {
+  font-size: 100px;
+  font-family: 'Tenali Ramakrishna';
+  margin: 1%;
+}
+
+.subWording {
+  font-size: 40px;
+  font-family: 'Tenali Ramakrishna';
+  margin-top: 0;
+  background-color: #bff1ff;
+  border: 7px solid white;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.worldMap {
+  height: 795px;
+  mix-blend-mode: darken;
+}

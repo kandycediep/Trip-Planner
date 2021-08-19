@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="italy.css" rel="stylesheet" type="text/css" />
+    <!-- logo appearing on browser tab -->
+    <link rel="icon" href ="./images/logo.png">
+    <!-- importing fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+  </head>
+  <body>
+    <!-- overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- button to close overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+   <!-- overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" style="font-family:'Poppins'">Home</a>
+    <a href="sanfrancisco.html" style="font-family:'Poppins'">San Francisco</a>
+    <a href="italy.html" style="font-family:'Poppins'">Italy</a>
+    <a href="singapore.html" style="font-family:'Poppins'">Singapore</a>
+    <a href="australia.html" style="font-family:'Poppins'">Australia</a>
+  </div>
+</div>
+
+<!-- open overlay navigation menu -->
+<span class = "heading" style="font-size:50px;font-family:'Poppins';cursor:pointer;" onclick="openNav()">&#9776; Trip Planner <img src="./images/transparent.png" style="height:55px;"></span>
+
+<p class = "header1"><strong>Italy</strong></p>
+    <script src="script.js"></script>
+  </body>
+</html>

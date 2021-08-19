@@ -1,0 +1,94 @@
+.header1 {
+  display: flex;
+  justify-content: center;
+  font: 80px black;
+  font-weight: bold;
+}
+
+/* nav bar */
+.navbar {
+  background-color: #ec351e;
+  font-family: 'Manrope';
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+/* links inside of the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.option:hover {
+  color: black;
+}
+
+.description {
+  padding: 2%;
+  font-size: 20px;
+  font-family: 'Manrope';
+}
+
+.parallax {
+  background-image: url("https://images.unsplash.com/photo-1517141772911-756dc840a94f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2688&q=80");
+  /* Set a specific height */
+  min-height: 650px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map {
+  box-shadow: 0px 0px 7px #888888;
+  border: 5px solid white;
+}
+
+.bridgeImg {
+  object-fit: cover;
+  height: 650px;
+  width: 690px;
+  float: right;
+  box-shadow: 0px 0px 7px #888888;
+  border: 5px solid white;
+}
+
+.fade-in-text {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+}

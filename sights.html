@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="sanfrancisco.css" rel="stylesheet" type="text/css" />
+     <link href="sights.css" rel="stylesheet" type="text/css" />
+    <!-- logo appearing on browser tab -->
+    <link rel="icon" href ="./images/logo.png">
+    <!-- importing fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+  </head>
+  <body>
+
+    <!-- overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- button to close overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+   <!-- overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" style="font-family:'Poppins'">Home</a>
+    <a href="sanfrancisco.html" style="font-family:'Poppins'">San Francisco</a>
+    <a href="italy.html" style="font-family:'Poppins'">Italy</a>
+    <a href="singapore.html" style="font-family:'Poppins'">Singapore</a>
+    <a href="australia.html" style="font-family:'Poppins'">Australia</a>
+  </div>
+
+</div>
+
+<!-- open overlay navigation menu -->
+<span class = "heading" style="font-size:50px;font-family:'Poppins';cursor:pointer;" onclick="openNav()">&#9776; Trip Planner <img src="./images/transparent.png" style="height:55px;"></span>
+
+<div class="fade-in-text">
+<p class = "header1" style="font-family:'Patrick Hand';"><strong>📍San Francisco</strong></p>
+</div>
+
+<!--navigation bar-->
+    <center>
+    <nav class = "navbar" 
+    class = "sticky">
+    <a class = "option" href="sanfrancisco.html">About</a>
+    <a class = "option"
+    href="sights.html">Sights</a>
+    <a class = "option"
+    href="itinerary.html">Itinerary</a>
+    </center>
+    </nav>
+    
+<!-- images for sights-->
+<div class="gallery">
+  <!-- golden gate bridge -->
+  <div class="image">
+    <img class="img1"
+    src="https://images.unsplash.com/photo-1610476905149-ac7d552b46be?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGdvbGRlbiUyMGdhdGUlMjBicmlkZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+  <div class="imageOverlay">
+    <div class="title">Golden Gate Bridge:</div>
+    <div class="description">
+      <li>Located in Marin County</li>
+      <li>When built, it spanned 4,200 feet and was named longest suspension bridge in the world until 1964</li>
+      <li>Leads you towards the Golden Gate National Recreation Area, Discovery Bay Museum, Muir Woods National Monument, and more</li>
+      <li>Deepest part of the bay is underneath this bridge</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- painted ladies -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1519227355453-8f982e425321?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80">
+  <div class="imageOverlay">
+    <div class="title">Painted Ladies:</div>
+    <div class="description">
+      <li>Located around Alamo Square</li>
+      <li>One of the most photographed locations in San Francisco</li> 
+      <li>Tight, escalating formation of Victorian houses with a background of downtown skyscrapers</li>
+      <li>They have been used in over 70 films and TV shows, including Full House</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- palace of fine arts -->
+  <div class="image">
+  <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg">
+  <div class="imageOverlay">
+    <div class="title">Palace of Fine Arts:</div>
+    <div class="description">
+      <li>Located in the Marina District</li> 
+      <li>Architecture is one of a kind and resembles the look of Italy (makes you feel like you're in a different country)</li>
+      <li>Was built for the 1915 World Fair</li>
+      <li>The venue is 17 acres</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- coit tower - offers panoramic views of the city and bay -->
+  <div class="gallery1">
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1553922796-9ac61f7c71a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+  <div class="imageOverlay">
+    <div class="title">Coit Tower:</div>
+    <div class="description">
+      <li>Located in the Telegraph Hill neighborhood</li>
+      <li>Offers panoramic views over the city and bay</li> 
+      <li>The tower is 210 feet (64 m) tall</li>
+      <li>Tower includes murals showing California business, agriculture and home life from 1934</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- lombard street - most crooked street in the world -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1602730307445-03a827d3f975?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80">
+  <div class="imageOverlay">
+    <div class="title">Lombard Street:</div>
+    <div class="description">
+      <li>Located one block south of Russian Hill Park</li>
+      <li>Famous for a steep, one-block section with eight hairpin turns, making it the most crooked street in the world</li> 
+      <li>Crooked part was designed in 1922, after it was determined that the 27% grade of the hill was too steep for most vehicles, and even pedestrians</li>
+      <li>Along with the uniqueness, the views up, down, and along Lombard Street, are unbeatable</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  
+  <!-- alcatraz island -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1515022817163-08c759ea4512?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWxjYXRyYXolMjBpc2xhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60">
+  <div class="imageOverlay">
+    <div class="title">Alcatraz Island:</div>
+    <div class="description">
+      <li>Located on a small rocky island in San Francisco Bay, 1.25 miles offshore from San Francisco</li>
+      <li>For almost 30 years, Alcatraz was the ultimate destination for many of the country's most dangerous and wily criminals, such as Robert Stroud, Al Capone, and many more.</li> 
+      <li>Opened to the public for tours in 1973, following the closing of the prison in 1963 because it was too expensive to continue operating</li>
+      <li>36 men tried 14 separate escapes and nearly all were caught or didn't survive the attempt, except three particular inmates: <a class="article" style="cursor:pointer;color:#bff1ff;" onClick="javascript:window.open('https://www.fbi.gov/history/famous-cases/alcatraz-escape');"><u>Click here to learn more about their escape</u></a></li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  
+  <!-- transamerica pyramid -->
+  <div class="gallery2">
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1571926834739-2161fceadd78?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYW5zYW1lcmljYSUyMHB5cmFtaWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+  <div class="imageOverlay">
+    <div class="title">Transamerica Pyramid:</div>
+    <div class="description">
+      <li>Located in the Financial District</li>
+      <li>It is the second tallest building in San Francisco, standing 48 stories tall</li> 
+      <li>Used as an office building so the top is not open to visitors</li>
+      <li>Unique shape was built for environmental practicality in order to let natural light and airflow reach the crowded streets</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- chinatown -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1562009271-99b4b9bfdb99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+  <div class="imageOverlay">
+    <div class="title">Chinatown:</div>
+    <div class="description">
+      <li>Located on Grant Avenue and Stockton Street (in the Chinatown District)</li>
+      <li>Largest Chinatown outside of Asia - it covers 24 city blocks</li> 
+      <li>Oldest Chinatown in North America - established in 1848 as a result of a large boom of Chinese immigrants coming to the U.S.</li>
+      <li>Golden Gate Cookie Factory makes 200,000 cookies a day the old-fashioned way</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  
+  <!-- ferry building -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+  <div class="imageOverlay">
+    <div class="title">Ferry Building:</div>
+    <div class="description">
+      <li>Located in the Embarcadero District</li>
+      <li>Inside is a food hall lined up with restaurants</li> 
+      <li>First opened in 1898, when it was the largest project ever undertaken in the city</li>
+      <li>A terminal for ferries that travel across the San Francisco Bay</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  
+  <!-- twin peaks -->
+  <div class="gallery3">
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1560461198-da90722e855a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80">
+  <div class="imageOverlay">
+    <div class="title">Twin Peaks:</div>
+    <div class="description">
+      <li>Located in San Bernardino County</li>
+      <li>Offers 360-degree views of San Francisco and the Bay Area</li> 
+      <li>Named "Twin Peaks" for a pair of 922-foot-high summits</li>
+      <li>The North and South Twin Peaks, also known as "Eureka" and "Noe" are about 660 ft (200 m) apart</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- bay bridge -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1610131350290-f39e3e180992?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+  <div class="imageOverlay">
+    <div class="title">Bay Bridge:</div>
+    <div class="description">
+      <li>Located as part of Interstate 80 and the direct road between San Francisco and Oakland</li>
+      <li>Process of building was actually three bridges into one</li> 
+      <li>The bridge was never given an official name, it goes by San Francisco-Oakland Bay Bridge (or just Bay Bridge)</li>
+      <li>Approximately 260,000 vehicles travel across this bridge everyday</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- cable cars -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1534050359320-02900022671e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80">
+  <div class="imageOverlay">
+    <div class="title">Cable Car:</div>
+    <div class="description">
+      <li>Located all around the city</li>
+      <li>One of the few places in the world where people can ride on cable cars</li> 
+      <li>Back then, cable cars serviced the entire city but now, there are only three lines remaining</li>
+      <li>The price to ride one way for everyone, regardless if you're a child or an adult, is $8</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- golden gate park -->
+  <div class="gallery4">
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1537574957746-0b73f5b105cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80">
+  <div class="imageOverlay">
+    <div class="title">Golden Gate Park:</div>
+    <div class="description">
+      <li>Located in the Chicago Park District</li>
+      <li>Large urban park consisting of 1,017 acres of public grounds, which is 20% larger than New York's Central Park</li> 
+      <li>The very first tweet was made in Golden Gate Park in front of its herd of bison</li>
+      <li>With 24 million visitors annually, Golden Gate is the third most-visited city park in the United States after Central Park and the Lincoln Memorial</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- fisherman's wharf -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1559530899-d09aefd8501c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80">
+  <div class="imageOverlay">
+    <div class="title">Fisherman's Wharf:</div>
+    <div class="description">
+      <li>Located in the Fisherman's Wharf District</li>
+      <li>Large urban park consisting of 1,017 acres of public grounds, which is 20% larger than New York's Central Park</li> 
+      <li>The very first tweet was made in Golden Gate Park in front of its herd of bison</li>
+      <li>With 24 million visitors annually, Golden Gate is the third most-visited city park in the United States after Central Park and the Lincoln Memorial</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- the wave organ -->
+  <div class="image">
+    <img class="img1" src="http://thebubblybay.com/wp-content/uploads/2014/january/wave_organ/waveOrgan05.jpg">
+  <div class="imageOverlay">
+    <div class="title">The Wave Organ</div>
+  </div>
+  </div>
+  <br>
+  </div>
+  <br>
+  <br>
+  <br>
+
+    <script src="script.js"></script>
+  </body>
+</html>

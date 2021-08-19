@@ -1,0 +1,6 @@
+.header1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+  font: 80px black;
+}
