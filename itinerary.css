@@ -1,0 +1,47 @@
+.dayHeader {
+  font-size: 2.5em;
+  margin-left: 5%;
+  font-family: 'Manrope';
+  font-weight: bold;
+}
+
+.dayPlan {
+  font-size: 1.25em;
+  font-family: 'Manrope';
+  margin-left: 5%;
+  padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.heading {
+  font-family: 'Manrope';
+  font-size: 3em;
+}
+
+.days, .days-btn, .days-input, .places, .places-btn, .places-input {
+  font-family: 'Manrope';
+  font-size: 20px;
+  margin: 3px;
+}
+
+.days-btn, .places-btn {
+  padding:0px 10px;
+  border: 3px solid rgb(255, 174, 174);
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 174, 174);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #888888;
+}
+
+.days-btn:hover, .places-btn:hover {
+  padding:0px 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  color:white;
+  background-color: rgb(255, 174, 174);
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #888888;
+}

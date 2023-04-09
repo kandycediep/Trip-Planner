@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="sanfrancisco.css" rel="stylesheet" type="text/css" />
+     <link href="itinerary.css" rel="stylesheet" type="text/css" />
+    <!-- logo appearing on browser tab -->
+    <link rel="icon" href ="./images/logo.png">
+    <!-- importing fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+  </head>
+  <body>
+
+    <!-- overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- button to close overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+   <!-- overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" style="font-family:'Poppins'">Home</a>
+    <a href="sanfrancisco.html" style="font-family:'Poppins'">San Francisco</a>
+    <a href="italy.html" style="font-family:'Poppins'">Italy</a>
+    <a href="singapore.html" style="font-family:'Poppins'">Singapore</a>
+    <a href="australia.html" style="font-family:'Poppins'">Australia</a>
+  </div>
+
+</div>
+
+<!-- open overlay navigation menu -->
+<span class = "heading" style="font-size:50px;font-family:'Poppins';cursor:pointer;" onclick="openNav()">&#9776; Trip Planner <img src="./images/transparent.png" style="height:55px;"></span>
+
+<div class="fade-in-text">
+<p class = "header1" style="font-family:'Patrick Hand';"><strong>📍San Francisco</strong></p>
+</div>
+
+<!--navigation bar-->
+    <center>
+    <nav class = "navbar" 
+    class = "sticky">
+    <a class = "option" href="sanfrancisco.html">About</a>
+    <a class = "option"
+    href="sights.html">Sights</a>
+    <a class = "option"
+    href="itinerary.html">Itinerary</a>
+    </center>
+    </nav>
+
+<div class="dayPlan">
+  <table>
+<td><p class="dayHeader">Day 1:</p>
+<p>Departing from SEA @ 6:05AM</p>
+<p>Arriving to SFO @ 8:20AM</p>
+<li>Chinatown</li>
+<li>Palace of Fine Arts</li>
+<li>Golden Gate Bridge</li>
+<li>Wave Organ</li>
+
+<p class="dayHeader">Day 2:</p>
+<li>Twin Peaks</li>
+<li>Painted Ladies</li>
+<li>Lombard Street</li>
+
+<p class="dayHeader">Day 3:</p>
+<li>Stanford University</li>
+<li>Golden Gate Park</li>
+<li>Ferry Building</li>
+<li>Fisherman's Wharf</li>
+
+<p class="dayHeader">Day 4:</p>
+<p>Departing from SEA @ 12:35PM</p>
+<p>Arriving to SFO @ 2:52PM</p></td>
+<br>
+</div>
+
+<!-- interactive create your own trip -->
+<div class="dayPlan">
+<td><h1 class="heading">Plan Your Own Trip to San Francisco:</h1>
+<section class="days">
+      <p class="days-header">How many days do you want to stay?</p>
+      <input class="days-input" type="text" placeholder="Your Answer"></input>
+      <button class="days-btn">Submit</button>
+</section>
+
+<section class="places">
+      <p class="places-header">What places do you wanna vist to? (refer back to "Sights" page for more info)</p>
+      <input class="places-input" type="text" placeholder="Your Answer"></input>
+      <button class="places-btn">Submit</button></td>
+</section>
+</table>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
