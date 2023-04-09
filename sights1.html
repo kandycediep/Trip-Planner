@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="italy.css" rel="stylesheet" type="text/css" />
+    <link href="sights1.css" rel="stylesheet" type="text/css" />
+    <!-- logo appearing on browser tab -->
+    <link rel="icon" href ="./images/logo.png">
+    <!-- importing fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+  </head>
+  <body>
+    
+    <!-- overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- button to close overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+   <!-- overlay content -->
+  <div class="overlay-content">
+    <a href="index.html" style="font-family:'Poppins'">Home</a>
+    <a href="sanfrancisco.html" style="font-family:'Poppins'">San Francisco</a>
+    <a href="italy.html" style="font-family:'Poppins'">Italy</a>
+    <a href="singapore.html" style="font-family:'Poppins'">Singapore</a>
+    <a href="australia.html" style="font-family:'Poppins'">Australia</a>
+  </div>
+  
+</div>
+
+<!-- open overlay navigation menu -->
+<span class = "heading" style="font-size:50px;font-family:'Poppins';cursor:pointer;" onclick="openNav()">&#9776; Trip Planner <img src="./images/transparent.png" style="height:55px;"></span>
+
+<div class="fade-in-text">
+<p class = "header1" style="font-family:'Patrick Hand'"><strong>📍Italy</strong></p>
+</div>
+
+<!--navigation bar-->
+    <center>
+    <nav class = "navbar" 
+    class = "sticky">
+    <a class = "option" 
+    href="italy.html">About</a>
+    <a class = "option"
+    href="sights1.html">Sights</a>
+    <a class = "option"
+    href="itinerary1.html">Itinerary</a>
+    </center>
+    </nav>
+
+<!-- images for sights-->
+<div class="gallery">
+  <!-- colosseum -->
+  <div class="image">
+    <img class="img1"
+    src="https://images.unsplash.com/photo-1626220611368-ad0a6bbd04ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80">
+  <div class="imageOverlay">
+    <div class="title">Colosseum:</div>
+    <div class="description">
+      <li>Located in Rome</li>
+      <li>Built in 80 AD</li>
+      <li>Once used for gladiatorial games</li>
+      <li>Largest ancient ampitheater ever to be built (and largest standing amphitheatre in the world)</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- trevi fountain -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1633452073821-b12ead098464?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80">
+  <div class="imageOverlay">
+    <div class="title">Trevi Fountain:</div>
+    <div class="description">
+      <li>Located in Rome</li>
+      <li>Built in 1762</li>
+      <li>Legend says that a coin thrown into the fountain will ensure another return to Rome</li> 
+      <li>The fountain stands around 85 feet (26 meters) tall and is 160 feet (49 meters) wide</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- pompeii -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1531220238712-18cea1d53e59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+  <div class="imageOverlay">
+    <div class="title">Pompeii Site:</div>
+    <div class="description">
+      <li>Located in Pompei</li> 
+      <li>Roman city was buried under ash after the eruption of Mt. Vesuvius in 79 AD</li>
+      <li>Originally remained undiscovered after eruption for 1,500 years</li>
+      <li>Around 2,000 people died during the eruption</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- amalfi coast -->
+  <div class="gallery1">
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1632851853275-7882469dfe99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+  <div class="imageOverlay">
+    <div class="title">Amalfi Coast:</div>
+    <div class="description">
+      <li>Popular cities within Amalfi Coast include: Ravello, Positano, Amalfi, and Sorrento</li>
+      <li>Famous for seaside towns, cliffs, and beaches</li> 
+      <li>Known for scenic hikes and views</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- verona -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1610574829585-0fc5a279647f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2153&q=80">
+  <div class="imageOverlay">
+    <div class="title">Verona:</div>
+    <div class="description">
+      <li>Located in Northern Italy</li> 
+      <li>Famous for being the setting of Shakespeare’s "Romeo and Juliet"</li>
+      <li>The city is known for its Roman antiquities</li> 
+    </div>
+  </div>
+  </div>
+  <br>
+  
+  <!-- tuscany -->
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80">
+  <div class="imageOverlay">
+    <div class="title">Tuscany:</div>
+    <div class="description">
+      <li>Region located in Central Italy (capital is Florence which is known for its Renaissance art and architecture)</li>
+      <li>Best known for landscapes (vineyards) and food/drink (wine)</li> 
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  
+  <!-- capri -->
+  <div class="gallery2">
+  <div class="image">
+  <img class="img1" src="https://images.unsplash.com/photo-1549026841-dc1939a05b67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80">
+  <div class="imageOverlay">
+    <div class="title">Capri:</div>
+    <div class="description">
+      <li>Located just off the coast of Naples</li>
+      <li>Known for being the home of the "Blue Grotto," a sea cave that creates a blue reflection, illuminating itself inside</li> 
+      <li>Faraglioni's are most associated with Capri (stacks of rocks and some have a central cavity, large enough to allow for the passage of a small boat)</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- venice -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1552751118-d3cde54807de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80">
+  <div class="imageOverlay">
+    <div class="title">Venice:</div>
+    <div class="description">
+      <li>Located in Northern Italy</li>
+      <li>There are no roads in Venice, only canals</li> 
+      <li>Popular sights include: the Grand Canal, Rialto Bridge, and Piazza San Marco</li>
+      <li>The city is sinking and studies show that it may be underwater as early as 2100 if global warming keeps accelerating</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  
+  <!-- lake garda -->
+  <div class="image">
+    <img class="img1" src="https://plus.unsplash.com/premium_photo-1676231364357-af8eda1af08d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+  <div class="imageOverlay">
+    <div class="title">Lake Garda:</div>
+    <div class="description">
+      <li>Located in Northern Italy</li>
+      <li>The area of the lake is approximately 370 square kilometers (143 square miles), making it Italy's largest lake</li> 
+      <li>Glaciers formed the alpine region at the end of the last ice age</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  
+  <!-- the dolomites -->
+  <div class="gallery3">
+  <div class="image">
+    <img class="img1" src="https://cdn.pixabay.com/photo/2019/07/16/20/48/dolomiti-4342572_1280.jpg">
+  <div class="imageOverlay">
+    <div class="title">The Dolomites:</div>
+    <div class="description">
+      <li>Located in mountain range in northeastern Italy</li>
+      <li>An abundant amount of scenic hikes and lakes</li>
+      <li>They get the nickname of "Pale Mountains" because of their rock color</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- puglia -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1597517298141-403444cefbca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+  <div class="imageOverlay">
+    <div class="title">Puglia:</div>
+    <div class="description">
+      <li>Located in Italy's southern region</li>
+      <li>Popular cities to visit: Bari, Ostuni, and Polignano a Mare </li> 
+      <li>Known for stunning coastlines and picturesque whitewashed hill towns</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- sardinia -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1591103000599-50f5b4ec7d3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80">
+  <div class="imageOverlay">
+    <div class="title">Sardinia:</div>
+    <div class="description">
+      <li>Large Italian island located in the Mediterranean Sea</li>
+      <li> Around 1,243 miles (2,000 km) of coastline, sandy beaches, and mountainous interior with hiking trails</li> 
+      <li>Known for beaches, turquoise sea, and rock formations</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- cinque terre -->
+  <div class="gallery4">
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1616234643798-12dc87da67b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80">
+  <div class="imageOverlay">
+    <div class="title">Cinque Terre:</div>
+    <div class="description">
+      <li>Located in Northwest Italy</li>
+      <li>Known for collection of coastal villages</li> 
+      <li>Liguria (region located within Cinque Terre) is best known for the birthplace of pesto sauce</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- duomo di milano -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1675&q=80">
+  <div class="imageOverlay">
+    <div class="title">Duomo di Milano:</div>
+    <div class="description">
+      <li>Second-largest cathedral in the world</li>
+      <li>The architectural style is a combination of Gothic and Renaissance</li> 
+      <li>The height of the cathedral stands at 108 m (354 ft)</li>
+      <li>It took around 600 years for the cathedral to be completed</li>
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <!-- scala dei turchi -->
+  <div class="image">
+    <img class="img1" src="https://images.unsplash.com/photo-1660295649999-ff0bde40b2de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2159&q=80">
+  <div class="imageOverlay">
+    <div class="title">Scala dei Turchi:</div>
+    <div class="description">
+      <li>Located in the southern Italian region of Sicily</li>
+      <li>Transparent waters and unique white limestone cliffs makes it feel like you’re on the Moon</li> 
+      <li>Created over the centuries through continuous movement of water and wind and slowly took the shape of a staircase</li>
+    </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  
+     <script src="script.js"></script>
+  </body>
+</html>
