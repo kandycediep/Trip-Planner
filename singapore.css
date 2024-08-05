@@ -1,6 +1,101 @@
 .header1 {
   display: flex;
   justify-content: center;
-  font-family: 'Manrope', sans-serif;
   font: 80px black;
+  font-weight: bold;
+}
+
+/* nav bar */
+.navbar {
+  background-color: #ec351e;
+  font-family: 'Manrope';
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+/* links inside of the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.option:hover {
+  color: black;
+}
+
+.description {
+  padding: 2%;
+  font-size: 20px;
+  font-family: 'Manrope';
+}
+
+.parallax {
+  background-image: url("https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80");
+  /* Set a specific height */
+  min-height: 650px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map {
+  box-shadow: 0px 0px 7px #888888;
+  border: 5px solid white;
+}
+
+.gardenImg {
+  object-fit: cover;
+  height: 600px;
+  width: 640px;
+  float: right;
+  box-shadow: 0px 0px 7px #888888;
+  border: 5px solid white;
+}
+
+.structure {
+  position: relative;
+  margin: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fade-in-text {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 }
